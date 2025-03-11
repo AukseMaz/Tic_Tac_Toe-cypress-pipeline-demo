@@ -23,3 +23,9 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+
+// -- Čia yra mūsų pvz. Reikia įsikelti į spec.cy.js failą kaip cy.my_command("bet kokia reikšmė", "bet kokia reikšmė")
+// Cypress.Commands.add('my_command', (param1, param2) => {
+//     cy.log(`Activated \'my_command\' params: ${param1}, ${param2}`);
+// });
