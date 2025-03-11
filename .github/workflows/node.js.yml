@@ -38,4 +38,4 @@ jobs:
     - name: Wait for React App to be Ready
       run: npx wait-on http://localhost:5173
 
-    - run: npm cypress run
+    - run: npx cypress run
