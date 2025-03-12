@@ -4,10 +4,10 @@ This project is a Cypress end-to-end (E2E) testing setup for a Tic-Tac-Toe web a
 
 ## 📌  Project Overview
 
-1️⃣ Tests the Tic-Tac-Toe app using Cypress.  
-2️⃣ Runs automated UI tests for game logic (X/O moves, win/draw conditions, reset functionality).  
-3️⃣ Uses Vite as the development server.  
-4️⃣ Supports interactive Cypress testing (UI mode) and headless testing (CLI mode).  
+- Tests the Tic-Tac-Toe app using Cypress.  
+- Runs automated UI tests for game logic (X/O moves, win/draw conditions, reset functionality).  
+- Uses Vite as the development server.  
+- Supports interactive Cypress testing (UI mode) and headless testing (CLI mode).  
 
 ## 📂 Project Structure
 
@@ -70,8 +70,26 @@ The following test cases are included in cypress/e2e/spec.cy.js:
 ✅ TC06: Detect a draw condition.  
 ✅ TC07: Reset game.  
 
-## 🚀 GitHub Actions
+## 🚀 CI/CD with GitHub Actions
 
+This project uses GitHub Actions to automate testing and ensure code quality before merging changes into the master branch. The GitHub Actions workflow (.github/workflows/node.js.yml) performs the following steps:
+
+1️⃣ Triggers:
+
+- Runs on push and pull_request events targeting the master branch.
+
+2️⃣ Environment:
+
+- Executes on Ubuntu (latest version).  
+- Uses Node.js 18.x. 
+
+3️⃣ Build & Test Steps:  
+
+- Checks out the repository.  
+- Installs dependencies using npm ci (ensures a clean install).  
+- Starts the React application in the background.  
+- Waits for the application to be ready.  
+- Runs Cypress tests for end-to-end testing.
 
 ## 📝 License
 
