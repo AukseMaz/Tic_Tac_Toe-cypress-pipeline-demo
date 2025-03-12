@@ -10,28 +10,28 @@ Supports interactive Cypress testing (UI mode) and headless testing (CLI mode).
 
 ## Project Structure
 
-/cypress
-  ├── /e2e          # Cypress test specs (Tic-Tac-Toe tests live here)
-  ├── /fixtures     # Sample test data (if needed)
-  ├── /support      # Cypress custom commands & setup
-  ├── cypress.config.js  # Cypress configuration file
-/src
-  ├── /components   # React components for the Tic-Tac-Toe game
-  ├── App.jsx       # Main React App component
-  ├── main.jsx      # App entry point
-/package.json       # Project scripts and dependencies
-/vite.config.js     # Vite server configuration
+/cypress   
+├── /e2e          # Cypress test specs (Tic-Tac-Toe tests live here)  
+  ├── /fixtures     # Sample test data (if needed)  
+  ├── /support      # Cypress custom commands & setup  
+  ├── cypress.config.js  # Cypress configuration file  
+/src  
+  ├── /components   # React components for the Tic-Tac-Toe game  
+  ├── App.jsx       # Main React App component  
+  ├── main.jsx      # App entry point  
+/package.json       # Project scripts and dependencies  
+/vite.config.js     # Vite server configuration  
 
 ## Installation
 
-1. Prerequisites
-    Node.js 
-    npm
+1. Prerequisites  
+    Node.js   
+    npm  
 
-2. Clone the Repository
-    git clone https://github.com/AukseMaz/Tic_Tac_Toe-cypress-pipeline-demo.git
+2. Clone the Repository  
+    git clone https://github.com/AukseMaz/ Tic_Tac_Toe-cypress-pipeline-demo.git  
 
-3. Install Dependencies
+3. Install Dependencies  
     npm install
 
 4. Run the Application  
