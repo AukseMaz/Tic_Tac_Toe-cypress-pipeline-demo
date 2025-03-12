@@ -40,32 +40,35 @@ Supports interactive Cypress testing (UI mode) and headless testing (CLI mode).
 ## Running Tests
 
 1. Run Cypress in UI Mode (Interactive)
-    npm run test:e2e
-
+``` bash
+npm run test:e2e
+```
 2. Run Cypress in CLI Mode (Headless)
-    npm run test:e2eh
+``` bash
+npm run test:e2eh
+```
 
 ## Cypress Test Cases
 
 The following test cases are included in cypress/e2e/spec.cy.js:
 
-✅ TC01: Load the app and verify the title.
-✅ TC02: Check if the board renders with 9 empty squares.
-✅ TC03: Ensure 'X' is placed first, followed by 'O'.
-✅ TC04: Prevent clicking on an already filled square.
-✅ TC05: Detect a winning condition.
-✅ TC06: Detect a draw condition.
-✅ TC07: Reset the game board when clicking the reset button.
+✅ TC01: Load the app and verify the title.  
+✅ TC02: Check if the board renders with 9 empty squares.  
+✅ TC03: Ensure 'X' is placed first, followed by 'O'.  
+✅ TC04: Prevent clicking on an already filled square.  
+✅ TC05: Detect a winning condition.  
+✅ TC06: Detect a draw condition.  
+✅ TC07: Reset the game board when clicking the reset button.  
 
 ## Additional Commands
 
 Command	Description
-npm run dev	    Start the Vite dev server.
-npm run build	Build the production version.
-npm run preview	Preview the production build.
-npm run lint	Run ESLint for code quality checks.
-npm run cy:ui	Open Cypress Test Runner (UI).
-npm run cy:cli	Run Cypress tests in headless mode.
+npm run dev	    Start the Vite dev server.  
+npm run build	Build the production version.  
+npm run preview	Preview the production build.  
+npm run lint	Run ESLint for code quality checks.  
+npm run cy:ui	Open Cypress Test Runner (UI).  
+npm run cy:cli	Run Cypress tests in headless mode.  
 
 ## License
 
