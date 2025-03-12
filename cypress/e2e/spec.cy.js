@@ -57,7 +57,7 @@ describe("Tic-Tac-Toe App", () => {
   });
 
   // Test the Reset Button
-  it("TC07. Should reset the board when clicking the reset button", () => {
+  it("TC07. Should reset game", () => {
     cy.get("button.square").eq(0).click(); // X
     cy.get("button.square").eq(1).click(); // O
     cy.get("button.reset").click(); // Click reset
