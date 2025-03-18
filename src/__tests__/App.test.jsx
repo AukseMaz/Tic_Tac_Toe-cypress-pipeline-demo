@@ -17,6 +17,11 @@ describe("calculateWinner function", () => {
     expect(calculateWinner(board)).toBe("X");
   });
 
+  it("returns '0' when 0 wins diagonally", () => {
+    const board = [null, null, "0", null, "0", null,"0", null, null];
+    expect(calculateWinner(board)).toBe("0");
+  });
+
   it("returns null when there is no winner", () => {
     const board = ["X","0","X", "X", "0", "0", "0", "X", "X"];
     expect(calculateWinner(board)).toBe(null);
@@ -24,6 +29,11 @@ describe("calculateWinner function", () => {
 
   it("returns null for an empty board", () => {
     const board = Array(9).fill(null);
+    expect(calculateWinner(board)).toBe(null);
+  });
+
+  it("work with a partially filled board", () => {
+    const board = ["X", "0", null, "0", "X", null, null, null, null];
     expect(calculateWinner(board)).toBe(null);
   });
 });
