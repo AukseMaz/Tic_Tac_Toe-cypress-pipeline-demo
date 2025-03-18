@@ -17,8 +17,8 @@ describe("calculateWinner function", () => {
     expect(calculateWinner(board)).toBe("X");
   });
 
-  it("returns '0' when 0 wins diagonally", () => {
-    const board = [null, null, "0", null, "0", null,"0", null, null];
+  it("returns '0' when 0 wins diagonally (other direction)", () => {
+    const board = [null, null, "0", null, "0", null, "0", null, null];
     expect(calculateWinner(board)).toBe("0");
   });
 
